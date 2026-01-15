@@ -96,3 +96,35 @@ header {
     header h1 { font-size: 1.75rem; }
     .dashboard { gap: 0.75rem; }
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 130px);
+    gap: 8px;
+    text-align: center;
+    font-size: 3rem;
+}
+    
+.fetch {
+    grid-column: span 4 / span 4;
+    background-color: green;
+    border-radius: 0.5rem
+}
+
+.formulier {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    background-color: lightblue;
+    border-radius: 0.5rem
+}
+
+.stopwatch {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: red;
+    border-radius: 0.5rem
+}
